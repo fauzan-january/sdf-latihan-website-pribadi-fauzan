@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+<title> WEBSITE PRIBADI FAUZAN </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            /* Di bawah ini (yang diapit kutip) adalah background header yaitu gambar foto pahlawan nasional, silakan ganti dengan file lain*/
+            background-image: url("fauzan.jpg);
+
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) Daftar link yang ada di bagian atas halaman -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#home" class="w3-button w3-block w3-black">Beranda</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#profilku" class="w3-button w3-block w3-black">Profilku</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#kontakdanmedsos" class="w3-button w3-block w3-black">Kontak dan Media Sosial</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#kritikdansaran" class="w3-button w3-block w3-black">Kritik dan Saran</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image/ Header dengan gambar -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Website Pribadi Fauzan</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">Hai!</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Selamat datang di website saya yang sederhana ini</span>
+        </div>
+    </header>
+
+    <!-- Menambahkan warna background dan tulisan besar di seluruh halaman -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- Kontainer Profilku -->
+        <div class="w3-container" id="profilku">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Profilku</span></h5>
+                <p>
+                    Nama saya Fauzan. Saya merupakan seorang disabilitas netra yang disebabkan oleh sebuah penyakit yang pada istilah medisnya disebut dengan Glaukoma. Saya mulai mengalami ketunanetraan pada uusia 15 tahun..
+                    </p>
+                <p>
+                    Meskipun saya memiliki kekurangan dalam segi penglihatan. Tapi itu tak akan menjadikan saya berputus asa dalam menjalani hidup. Malahan kekurangan ini saya jadikan sebagai motivasi dan pemacu semangat saya untuk berjuang dan menunjukkan kepada dunia bahwasanya saya bisa melakukan hal apapun seperti orang lain lakukan. Baik itu belajar, aktivitas sehari-hari, bahkan menggunakan teknologi pun sayabisa.
+                    </p>
+                <!-- Di bawah ini ada tempat untuk menaruh quote/ kata mutiara-->
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Keterbatasan bukanlah penghalang kita untuk berkarya. Justru jadikan lah keterbatasan itu sebagai batu loncatan kita untuk menunjukkan kepada dunia bahwasanya kita bisa!"</i></p>
+                    <p>fauzan</p>
+                </div>
+                <!-- Di bawah ini adalah gambar pahlawan nasional. Silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar"
+                    src="fauzan.jpg"
+                    style="width:100%;max-width:1000px" class="w3-margin-top">
+
+            </div>
+        </div>
+
+        <!-- Kontainer Kontak dan Media Sosial -->
+        <div class="w3-container" id="kontakdanmedsos">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Kontak dan Media Sosial</span></h5>
+                
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Kontak');" id="myLink">
+                        <div class="w3-col s6 tablink">Kontak</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'MediaSosial');">
+                        <div class="w3-col s6 tablink">Media Sosial</div>
+                    </a>
+                </div>
+
+                <div id="Kontak" class="w3-container menu w3-padding-48 w3-card">
+                    <button> <a href="tel:6285272368074"> Telepon </a> </button>
+
+                    <button> <a href="mailto:fauzanthefortuna01@gmail.com"> Email </a> </button>
+
+                </div>
+
+                <div id="MediaSosial" class="w3-container menu w3-padding-48 w3-card">
+                    <button> <a href="https://wa.me/6285272368074">WhatsApp </a> </button>
+
+                    <button> <a href="https://t.me/fauzan_january">Telegram </a> </button>
+
+                    <button> <a href="https://facebook.com/fauzanjanuary"> Facebook </a> </button>
+
+                    <button> <a href="https://instagram.com/fauzan_january"> Instagram </a> </button>
+
+                    <button> <a href="https://tiktok.com/@fauzan_january"> Tiktok </a> </button>
+
+                    <button> <a href="https://youtube.com/@fauzan_january"> YouTube </a> </button>
+
+                </div>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar"
+                    src="fauzan.jpg"
+                    style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Kontainer Pesan -->
+        <div class="w3-container" id="kritikdansaran" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Kritik dan Saran Anda</span></h5>
+                <p> Jika ada kritik dan saran dari anda, silahkan sampaikan kepada saya melalui form ini! </p>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar"
+                    src="fauzan.jpg" class="w3-image"
+                    style="width:100%">
+                <p><span class="w3-tag">Kritik dan saran yang anda berikan sangat berguna untuk saya membangun website ini menjadi lebih baik lagi kedepannya</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama Anda" required
+                            name="nama"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Alamat Email Anda"
+                            required name="email"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Pesan Anda" required name="Pesan"></p>
+                    <p><button class="w3-button w3-black" type="submit">KIRIM PESAN</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Dibangun oleh <a href="https://wa.me/6285272368074" title="Fauzan" target="_blank"
+                class="w3-hover-text-green">Fauzan</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
